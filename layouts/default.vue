@@ -2,7 +2,7 @@
   <div>
     <nuxt/>
 
-    <PageFooter/>
+    <PageFooter class="sml-push-y3 med-push-y6"/>
   </div>
 </template>
 
