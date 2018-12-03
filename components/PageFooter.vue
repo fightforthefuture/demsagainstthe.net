@@ -7,11 +7,8 @@
           <img src="~assets/images/fftf-logo.svg" class="grid-center"
                alt="Fight for the Future logo" />
         </a>
-      </div> <!-- .wrapper -->
-    </div> <!-- .pad -->
-    <div class="contact-block sml-pad-y5 sml-push-y2">
-      <div class="wrapper">
-        <p class="text-loud tuck-bottom">
+
+        <p class="sml-push-y2 med-push-y3 text-loud tuck-bottom">
           For press inquiries, please contact us at:
         </p>
         <p class="sml-push-y1 tuck-bottom">
@@ -29,6 +26,6 @@
           </small>
         </p>
       </div> <!-- .wrapper -->
-    </div> <!-- .contact-block -->
+    </div> <!-- .pad -->
   </div> <!-- .page-footer -->
 </template>

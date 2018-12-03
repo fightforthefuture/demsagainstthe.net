@@ -4,22 +4,47 @@
       <div class="wrapper">
         <div class="row">
           <div class="sml-c12 lrg-c8 grid-center text-center">
-            <h1>Your title goes here</h1>
+            <h1>
+              These Are The Democrats Helping Trump and Ajit Pai Kill Net Neutrality
+            </h1>
             <p class="sml-push-y2 med-push-y3">
-              Sub heading goes here, lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. In nibh libero, venenatis sed justo eu,
-              sollicitudin sollicitudin nisi. Integer semper tortor orci,
-              id ultricies velit laoreet in. Vestibulum sit amet ante vel risus
-              ornare ultrices sed id leo.
+              More than 8 in 10 Americans from across the political divide
+              support net neutrality—but you wouldn&rsquo;t know it watching
+              things play out in D.C. Despite 75% of Republican voters
+              supporting net neutrality, GOP lawmakers have been virtually
+              absent from supporting all Internet freedom fights as they cave
+              to the will Trump and Ajit Pai. Meanwhile, the vast majority of
+              Democratic lawmakers have taken a stand to defend net neutrality—
+              <strong>except for a handful of Dems who are putting the Internet
+              lobby&rsquo;s money over the will of their constituents.</strong>
             </p>
-            <a class="btn btn-block sml-push-y2 med-push-y3" href="#TODO">
-              Call to action
-            </a>
+            <p>
+              What do all of these hold out Dems have in common? They&rsquo;ve
+              all taken tens of thousands of dollars in &ldquo;campaign
+              donations&rdquo; from telecoms like Verizon, Comcast, and AT&amp;T.
+            </p>
+            <p><strong>
+              Now, these Dems have
+              <a href="https://www.deadlinefornetneutrality.com/">
+                just a few more days</a>
+              to save the Internet as we know it by signing the Congressional
+              Review Act discharge petition. Will they stand with the American
+              people or will they stand with Trump and his FCC crony Ajit Pai?
+            </strong></p>
           </div> <!-- .c -->
         </div> <!-- .row -->
       </div> <!-- .wrapper -->
     </section>
 
+    <section id="dems">
+      <div class="wrapper">
+        <div class="row">
+          <div class="sml-c12 lrg-c10 grid-center text-center">
+            <TargetReps :reps="reps"/>
+          </div> <!-- .c -->
+        </div> <!-- .row -->
+      </div> <!-- .wrapper -->
+    </section>
   </div>
 </template>
 
@@ -27,8 +52,13 @@
 import axios from 'axios'
 import config from '~/config'
 import { createMetaTags, smoothScrollToElement } from '~/assets/js/helpers'
+import TargetReps from '~/components/TargetReps'
 
 export default {
+  components: {
+    TargetReps
+  },
+
   head() {
     return {
       title: config.sharing.title,
@@ -42,27 +72,16 @@ export default {
   },
 
   async asyncData() {
-    let events = []
+    let reps = []
     try {
-      const { data } = await axios.get('https://data.battleforthenet.com/events.json')
-
-      events = data.filter(e => e.category === 'facebook_group').sort((a, b) => {
-        if (a.address < b.address) {
-          return -1
-        }
-        else if (a.address > b.address) {
-          return 1
-        }
-        else {
-          return 0
-        }
-      })
+      const { data } = await axios.get('https://data.battleforthenet.com/demsagainstthenet/dems.json')
+      reps = data
     }
     catch (error) {
       //
     }
     return {
-      events: events
+      reps: reps
     }
   },
 
