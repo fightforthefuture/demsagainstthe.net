@@ -3,25 +3,17 @@
     <section class="sml-pad-y3 med-pad-y6">
       <div class="wrapper">
         <div class="row">
-          <div class="sml-c12 lrg-c8 grid-center text-center">
-            <h1>
+          <div class="sml-c12 lrg-c9 grid-center text-center">
+            <h1><span class="highlight">
               These Are The Democrats Helping Trump and Ajit Pai Kill Net Neutrality
-            </h1>
+            </span></h1>
             <p class="sml-push-y2 med-push-y3">
-              More than 8 in 10 Americans from across the political divide
-              support net neutrality—but you wouldn&rsquo;t know it watching
-              things play out in D.C. Despite 75% of Republican voters
-              supporting net neutrality, GOP lawmakers have been virtually
-              absent from supporting all Internet freedom fights as they cave
-              to the will Trump and Ajit Pai. Meanwhile, the vast majority of
-              Democratic lawmakers have taken a stand to defend net neutrality—
-              <strong>except for a handful of Dems who are putting the Internet
-              lobby&rsquo;s money over the will of their constituents.</strong>
-            </p>
-            <p>
-              What do all of these hold out Dems have in common? They&rsquo;ve
-              all taken tens of thousands of dollars in &ldquo;campaign
-              donations&rdquo; from telecoms like Verizon, Comcast, and AT&amp;T.
+              Despite a vast majority of Americans who support net neutrality,
+              a handful of Dems are putting the telecom lobby&rsquo;s money over
+              the will of their constituents. What do all of these hold out Dems
+              have in common? They&rsquo;ve all taken tens of thousands of
+              dollars in &ldquo;campaign donations&rdquo; from telecoms like
+              Verizon, Comcast, and AT&amp;T.
             </p>
             <p><strong>
               Now, these Dems have
@@ -39,7 +31,7 @@
     <section id="dems">
       <div class="wrapper">
         <div class="row">
-          <div class="sml-c12 lrg-c10 grid-center text-center">
+          <div class="sml-c12 lrg-c10 grid-center">
             <TargetReps :reps="reps"/>
           </div> <!-- .c -->
         </div> <!-- .row -->
