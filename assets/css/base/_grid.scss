@@ -160,7 +160,7 @@ body.full-width .wrapper {
 }
 .flex-row > * {
   flex: 1;
-  margin-right: $gutter*2;
+  margin-right: $gutter*4;
   min-width: 0;
 }
 .flex-row > *:last-child {
@@ -179,7 +179,7 @@ body.full-width .wrapper {
 }
 .med-flex-row > * {
   @include respond-to(med) {
-    margin-right: $gutter*2;
+    margin-right: $gutter*4;
   }
 }
 .lrg-flex-row {
@@ -189,7 +189,7 @@ body.full-width .wrapper {
 }
 .lrg-flex-row > * {
   @include respond-to(lrg) {
-    margin-right: $gutter*2;
+    margin-right: $gutter*4;
   }
 }
 @for $i from 1 through 4 {
