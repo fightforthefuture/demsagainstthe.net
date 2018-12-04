@@ -11,12 +11,8 @@
               The vast majority of Americans support net neutrality, but a handful of 
               Dems are holding out support. Why? They&rsquo;ve all taken tens of 
               thousands of dollars in “campaign donations” from telecoms like Verizon, 
-              Comcast, and AT&amp;T.
-            </p>
-            <p><strong>
-              Now, these Dems have
-              <a href="https://www.deadlinefornetneutrality.com/">
-                just a few more days</a>
+              Comcast, and AT&amp;T. <strong>Now, these Dems have 
+              <a href="https://www.deadlinefornetneutrality.com/">just a few more days</a>
               to save the Internet as we know it. Tell them to side with the American 
               people and sign the Congressional Review Act discharge petition.
             </strong></p>
