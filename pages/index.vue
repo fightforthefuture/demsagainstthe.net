@@ -37,7 +37,7 @@
       <div class="wrapper">
         <div class="row">
           <div class="sml-c12 med-c7 lrg-c10 grid-center">
-            <TargetReps :reps="reps"/>
+            <TargetReps :reps="reps.oppose" v-if="reps.oppose"/>
           </div> <!-- .c -->
         </div> <!-- .row -->
       </div> <!-- .wrapper -->
@@ -46,11 +46,13 @@
     <section id="supporters" class="sml-push-y6 med-push-y8">
       <div class="wrapper">
         <div class="row">
-          <div class="sml-c12 med-c7 lrg-c10 grid-center text-center">
+          <div class="sml-c12 grid-center text-center">
             <h2>
               Lawmakers, Businesses, and the grassroots voices on the right side
               of Internet history
             </h2>
+
+            <LogoCloud :reps="reps.support" v-if="reps.support"/>
           </div> <!-- .c -->
         </div> <!-- .row -->
       </div> <!-- .wrapper -->
@@ -63,10 +65,12 @@ import axios from 'axios'
 import config from '~/config'
 import { createMetaTags, smoothScrollToElement } from '~/assets/js/helpers'
 import TargetReps from '~/components/TargetReps'
+import LogoCloud from '~/components/LogoCloud'
 
 export default {
   components: {
-    TargetReps
+    TargetReps,
+    LogoCloud
   },
 
   head() {
@@ -82,14 +86,23 @@ export default {
   },
 
   async asyncData() {
-    let reps = []
+    let reps = {}
     try {
       const { data } = await axios.get('https://data.battleforthenet.com/demsagainstthenet/dems.json')
-      reps = data
+      reps.oppose = data
     }
     catch (error) {
       //
     }
+
+    try {
+      const { data } = await axios.get('https://data.battleforthenet.com/scoreboard/all.json')
+      reps.support = data.filter(r => r.supports_cra)
+    }
+    catch (error) {
+      //
+    }
+
     return {
       reps: reps
     }
