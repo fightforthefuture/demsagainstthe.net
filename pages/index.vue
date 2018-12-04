@@ -3,7 +3,7 @@
     <section class="sml-pad-y3 med-pad-y6">
       <div class="wrapper">
         <div class="row">
-          <div class="sml-c12 lrg-c9 grid-center text-center">
+          <div class="sml-c12 lrg-c10 grid-center text-center">
             <h1 class="sml-push-y3"><span class="highlight">
               These Are The Democrats Helping Trump and Ajit Pai Kill Net Neutrality
             </span></h1>
@@ -38,6 +38,19 @@
         <div class="row">
           <div class="sml-c12 med-c7 lrg-c10 grid-center">
             <TargetReps :reps="reps"/>
+          </div> <!-- .c -->
+        </div> <!-- .row -->
+      </div> <!-- .wrapper -->
+    </section>
+
+    <section id="supporters" class="sml-push-y6 med-push-y8">
+      <div class="wrapper">
+        <div class="row">
+          <div class="sml-c12 med-c7 lrg-c10 grid-center text-center">
+            <h2>
+              Lawmakers, Businesses, and the grassroots voices on the right side
+              of Internet history
+            </h2>
           </div> <!-- .c -->
         </div> <!-- .row -->
       </div> <!-- .wrapper -->

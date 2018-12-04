@@ -75,7 +75,7 @@
 .sml-push-y-half {
   margin-top: $gutter/2;
 }
-@each $i in 1, 2, 3, 4, 5, 6 {
+@each $i in 1, 2, 3, 4, 5, 6, 7, 8 {
   .sml-push-y#{$i} {
     margin-top: $gutter * ($i);
   }
@@ -85,7 +85,7 @@
     margin-top: $gutter/2;
   }
 
-  @each $i in 0, 1, 2, 3, 4, 5, 6 {
+  @each $i in 0, 1, 2, 3, 4, 5, 6, 7, 8 {
     .med-push-y#{$i} {
       margin-top: $gutter * ($i);
     }
@@ -96,7 +96,7 @@
     margin-top: $gutter/2;
   }
 
-  @each $i in 0, 1, 2, 3, 4, 5, 6 {
+  @each $i in 0, 1, 2, 3, 4, 5, 6, 7, 8 {
     .lrg-push-y#{$i} {
       margin-top: $gutter * ($i);
     }
