@@ -33,12 +33,17 @@
             <a :href="`tel:${rep.phone}`"><strong>{{ rep.phone }}</strong></a>
           </p>
         </div> <!-- .fill -->
-        <div class="sml-pad-2 sml-pad-y1 fill-grey is-rounded-bottom">
+        <div class="sml-pad-2 sml-pad-y1 fill-grey with-border-bottom">
           <p class="text-brand">
             <img class="icon-left" src="~assets/images/twitter-logo.svg" alt="Twitter"/>
             Tweet:
             <a :href="`https://twitter.com/${rep.twitter}`" target="_blank"><strong>
               @{{ rep.twitter }}</strong></a>
+          </p>
+        </div> <!-- .fill -->
+        <div class="sml-pad-2 sml-pad-y1 fill-grey is-rounded-bottom">
+          <p class="text-brand text-center">
+            Selling out for: {{ rep.cable_contributions }}
           </p>
         </div> <!-- .fill -->
       </div> <!-- .fill -->
