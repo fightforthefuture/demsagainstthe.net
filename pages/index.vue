@@ -4,10 +4,10 @@
       <div class="wrapper">
         <div class="row">
           <div class="sml-c12 lrg-c9 grid-center text-center">
-            <h1><span class="highlight">
+            <h1 class="sml-push-y3"><span class="highlight">
               These Are The Democrats Helping Trump and Ajit Pai Kill Net Neutrality
             </span></h1>
-            <p class="sml-push-y2 med-push-y3">
+            <p class="sml-push-y3">
               Despite a vast majority of Americans who support net neutrality,
               a handful of Dems are putting the telecom lobby&rsquo;s money over
               the will of their constituents. What do all of these hold out Dems
@@ -23,6 +23,11 @@
               Review Act discharge petition. Will they stand with the American
               people or will they stand with Trump and his FCC crony Ajit Pai?
             </strong></p>
+
+            <a @click.prevent="scrollTo('#dems')">
+              <img src="~assets/images/arrow-down.svg" alt="down arrow"
+                   class="grid-center sml-push-y4 med-push-y6"/>
+            </a>
           </div> <!-- .c -->
         </div> <!-- .row -->
       </div> <!-- .wrapper -->
@@ -31,7 +36,7 @@
     <section id="dems">
       <div class="wrapper">
         <div class="row">
-          <div class="sml-c12 lrg-c10 grid-center">
+          <div class="sml-c12 med-c7 lrg-c10 grid-center">
             <TargetReps :reps="reps"/>
           </div> <!-- .c -->
         </div> <!-- .row -->

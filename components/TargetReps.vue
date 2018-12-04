@@ -3,14 +3,21 @@
   line-height: 1.2;
   min-height: $base-font-size*2*1.2;
 }
+.rep-container {
+  @include respond-to(lrg) {
+    max-width: 31.722%;
+  }
+}
 </style>
 
 <template>
   <div>
     <div v-for="(row, rowIndex) in repRows" :key="`row-${rowIndex}`"
-         class="flex-row sml-flex-col med-flex-row sml-push-y2">
-      <div v-for="(rep, repIndex) in row" :key="`rep-${repIndex}-${rep.name}`">
-        <div class="sml-push-y2 med-push-y0 sml-pad-2 fill-white is-rounded-top">
+         class="flex-row sml-flex-col lrg-flex-row sml-push-y2">
+      <div v-for="(rep, repIndex) in row"
+           :key="`rep-${repIndex}-${rep.name}`"
+           class="rep-container">
+        <div class="sml-push-y2 lrg-push-y0 sml-pad-2 fill-white is-rounded-top">
           <img :src="`https://data.battleforthenet.com/scoreboard-images/${rep.bioguide_id}.jpg`"
                :alt="`Photo of ${rep.name}`"
                class="is-rounded grid-center">
