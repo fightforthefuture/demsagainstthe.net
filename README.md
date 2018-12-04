@@ -1,4 +1,4 @@
-# demsagainstthenet.com
+# demsagainstthe.net
 
 > A Fight for the Future website
 
