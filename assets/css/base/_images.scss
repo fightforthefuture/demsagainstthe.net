@@ -4,3 +4,10 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.icon-left {
+  float: left;
+  padding-right: $gutter/2;
+  max-height: $base-font-size * $base-line-height;
+  width: auto;
+}

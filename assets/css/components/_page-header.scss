@@ -1,12 +1,17 @@
 // Page Header
 
 .page-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   width: 100%;
-  padding: $gutter 0 $gutter*2;
+  height: 23px;
+  background: $white;
+}
+.page-header .header-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
   z-index: 100;
-  background: $grey-light-color;
+  height: 60px;
+  width: 102px;
+  margin-left: -51px; // Half the width
 }
