@@ -8,20 +8,17 @@
               These Are The Democrats Helping Trump and Ajit Pai Kill Net Neutrality
             </span></h1>
             <p class="sml-push-y3">
-              Despite a vast majority of Americans who support net neutrality,
-              a handful of Dems are putting the telecom lobby&rsquo;s money over
-              the will of their constituents. What do all of these hold out Dems
-              have in common? They&rsquo;ve all taken tens of thousands of
-              dollars in &ldquo;campaign donations&rdquo; from telecoms like
-              Verizon, Comcast, and AT&amp;T.
+              The vast majority of Americans support net neutrality, but a handful of 
+              Dems are holding out support. Why? They&rsquo;ve all taken tens of 
+              thousands of dollars in “campaign donations” from telecoms like Verizon, 
+              Comcast, and AT&amp;T.
             </p>
             <p><strong>
               Now, these Dems have
               <a href="https://www.deadlinefornetneutrality.com/">
                 just a few more days</a>
-              to save the Internet as we know it by signing the Congressional
-              Review Act discharge petition. Will they stand with the American
-              people or will they stand with Trump and his FCC crony Ajit Pai?
+              to save the Internet as we know it. Tell them to side with the American 
+              people and sign the Congressional Review Act discharge petition.
             </strong></p>
 
             <a @click.prevent="scrollTo('#dems')">
