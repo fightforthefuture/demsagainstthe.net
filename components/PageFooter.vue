@@ -2,15 +2,15 @@
   <div class="page-footer text-center">
     <div class="sml-pad-y4">
       <div class="wrapper">
-        <p class="text-loud">Built by:</p>
+        <h4>Built by:</h4>
         <a href="https://www.fightforthefuture.org">
           <img src="~assets/images/fftf-logo.svg" class="grid-center"
                alt="Fight for the Future logo" />
         </a>
 
-        <p class="sml-push-y2 med-push-y3 text-loud tuck-bottom">
+        <h4 class="sml-push-y2 med-push-y3">
           For press inquiries, please contact us at:
-        </p>
+        </h4>
         <p class="sml-push-y1 tuck-bottom">
           <small>
             <a href="tel://9788526457">978-852-6457</a> or
