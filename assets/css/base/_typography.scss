@@ -29,8 +29,11 @@ h2 {
   }
 }
 span.highlight {
-  box-shadow: $gutter 0 0 $warn-color, -$gutter 0 0 $warn-color;
   background: $warn-color;
+  box-shadow: $gutter 0 0 $warn-color, -$gutter 0 0 $warn-color;
+  -webkit-box-decoration-break: clone;
+     -moz-box-decoration-break: clone;
+          box-decoration-break: clone;
 }
 
 // Typography > Text
