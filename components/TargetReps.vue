@@ -37,7 +37,7 @@
            class="rep-container">
         <div class="sml-push-y2 lrg-push-y0 sml-pad-1 fill-warn is-rounded-top">
           <p class="text-center"><strong>
-           {{ rep.cable_contributions }} from telecoms
+           Took {{ rep.cable_contributions }} from ISPs
           </strong></p>
         </div> <!-- .fill -->
         <div class="sml-pad-1 sml fill-white">
