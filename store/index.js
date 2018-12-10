@@ -7,6 +7,7 @@ const createStore = () => {
     state: {
       // State > Config
       anPetitionId: config.actionNetworkPetitionId,
+      callpowerCampaignId: config.callpowerCampaignId,
       donateUrl: config.donateUrl,
       letterText: config.letterText,
 
@@ -27,6 +28,7 @@ const createStore = () => {
       email: null,
       address: null,
       zipCode: null,
+      phone: null,
 
       // State > Photo Gallery
       selfies: null,
@@ -74,6 +76,10 @@ const createStore = () => {
 
       setZipCode(state, value) {
         state.zipCode = value
+      },
+
+      setPhone(state, value) {
+        state.phone = value
       },
 
       // Mutations > Photo Gallery & Submissions

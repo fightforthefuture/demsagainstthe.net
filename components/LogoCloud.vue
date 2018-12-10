@@ -4,7 +4,7 @@
       <div>
         <h3>Senators</h3>
         <p v-for="(rep, index) in senate"
-           :key="`rep-${index}-${rep.first_name}`"
+           :key="`s-${index}-${rep.first_name}`"
            :class="{'sml-push-y2': index === 0}">
           Sen. {{rep.first_name}} {{rep.last_name}}
         </p> <!-- v-for -->
@@ -20,7 +20,7 @@
       <div>
         <h3 class="sml-push-y3 med-push-y0">Organizations</h3>
         <p v-for="(org, index) in orgs"
-           :key="`s-${index}-${s}`"
+           :key="`org-${index}-${org}`"
            :class="{'sml-push-y2': index === 0}">
           {{ org }}
         </p> <!-- v-for -->
@@ -28,7 +28,7 @@
       <div>
         <h3 class="sml-push-y3 med-push-y0">People</h3>
         <p v-for="(p, index) in people"
-           :key="`p-${index}-${s}`"
+           :key="`p-${index}-${p}`"
            :class="{'sml-push-y2': index === 0}">
           {{ p }}
         </p> <!-- v-for -->

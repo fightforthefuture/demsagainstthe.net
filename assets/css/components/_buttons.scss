@@ -2,20 +2,21 @@
 
 // Button > Default
 .btn {
-  // TODO: update style
   display: inline-block;
   padding: $gutter/2 $gutter*2 ($gutter/2 + 2);
   overflow: hidden;
-  background: $brand-color;
+  background: $warn-color;
   border: none;
   border-radius: $default-border-radius;
-  color: $white;
+  color: $grey-dark-color;
   cursor: pointer;
   font-size:  $font-size-2;
+  font-family: $heading-stack;
   font-weight: $bold-font-weight;
   outline: none;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
     -moz-user-select:    none;
     -webkit-user-select: none;
   user-select:           none;
@@ -28,7 +29,8 @@
 }
 .btn:hover,
 .btn:focus {
-  background: $brand-dark-color;
+  color: $white;
+  // background: $brand-dark-color;
   border: none;
 }
 button.btn {
@@ -77,6 +79,7 @@ button.btn {
 // Buttons > Sharing
 .btn.btn-twitter {
   background-color: $twitter-color;
+  color: $white;
 }
 .btn.btn-twitter:hover,
 .btn.btn-twitter:focus {
@@ -85,6 +88,7 @@ button.btn {
 }
 .btn.btn-facebook {
   background-color: $facebook-color;
+  color: $white;
 }
 .btn.btn-facebook:hover,
 .btn.btn-facebook:focus {

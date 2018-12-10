@@ -8,19 +8,16 @@
               These Are The Democrats Helping Trump and Ajit Pai Kill Net Neutrality
             </span></h1>
             <p class="sml-push-y3">
-              The vast majority of Americans support net neutrality, but a handful of 
-              Dems are holding out support. Why? They&rsquo;ve all taken tens of 
-              thousands of dollars in “campaign donations” from telecoms like Verizon, 
-              Comcast, and AT&amp;T. <strong>Now, these Dems have 
+              The vast majority of Americans support net neutrality, but a handful of
+              Dems are holding out support. Why? They&rsquo;ve all taken tens of
+              thousands of dollars in “campaign donations” from telecoms like Verizon,
+              Comcast, and AT&amp;T. <strong>Now, these Dems have
               <a href="https://www.deadlinefornetneutrality.com/">just a few more days</a>
-              to save the Internet as we know it. Tell them to side with the American 
+              to save the Internet as we know it. Tell them to side with the American
               people and sign the Congressional Review Act discharge petition.
             </strong></p>
 
-            <a @click.prevent="scrollTo('#dems')">
-              <img src="~assets/images/arrow-down.svg" alt="down arrow"
-                   class="grid-center sml-push-y4 med-push-y6"/>
-            </a>
+            <CallForm class="sml-push-y4 med-push-y6"/>
           </div> <!-- .c -->
         </div> <!-- .row -->
       </div> <!-- .wrapper -->
@@ -50,20 +47,31 @@
         </div> <!-- .row -->
       </div> <!-- .wrapper -->
     </section>
+
+    <Modal>
+      <CallScriptModal v-if="modalType === 'call-script'"/>
+    </Modal>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import config from '~/config'
+import { mapState } from 'vuex'
 import { createMetaTags, smoothScrollToElement } from '~/assets/js/helpers'
+import CallForm from '~/components/CallForm'
 import TargetReps from '~/components/TargetReps'
 import LogoCloud from '~/components/LogoCloud'
+import Modal from '~/components/Modal'
+import CallScriptModal from '~/components/CallScriptModal'
 
 export default {
   components: {
+    CallForm,
     TargetReps,
-    LogoCloud
+    LogoCloud,
+    Modal,
+    CallScriptModal
   },
 
   head() {
@@ -99,6 +107,10 @@ export default {
     return {
       reps: reps
     }
+  },
+
+  computed: {
+    ...mapState(['modalType', 'modalData'])
   },
 
   methods: {
