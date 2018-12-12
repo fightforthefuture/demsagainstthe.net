@@ -5,14 +5,14 @@
         <div class="row">
           <div class="sml-c12 lrg-c10 grid-center text-center">
             <h1 class="sml-push-y3"><span class="highlight">
-              These Are The Democrats Helping Trump and Ajit Pai Kill Net Neutrality
+              These Are The 17 Democrats Helping Trump and Ajit Pai Kill Net Neutrality
             </span></h1>
             <p class="sml-push-y3">
               The vast majority of Americans support net neutrality, but a handful of 
               House Democrats are 
               <a href="https://gizmodo.com/last-minute-push-to-restore-net-neutrality-stymied-by-d-1831023390">holding out</a> 
-              support. Why? They’ve all taken tens of thousands of dollars in “campaign 
-              donations” from powerful Internet service providers like AT&T, Comcast and 
+              support. Why? They&rsquo;ve all taken tens of thousands of dollars in “campaign 
+              donations” from powerful Internet service providers like AT&amp;T, Comcast and 
               Verizon. Now, Congress has just a few more days to save the Internet as we 
               know it and we need these Democrats are on our side. <strong>Enter your 
               number now to tell them to side with the American people by committing to 
