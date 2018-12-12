@@ -17,8 +17,8 @@
       </h2>
       <p class="sml-push-y1"><strong>Introduce yourself, be polite, and say:</strong></p>
       <p class="text-meta">
-        I&rsquo;m calling on all House Democrats to sign the discharge petition
-        before the end of this Congress to force a vote on the net neutrality CRA.
+        I&rsquo;m calling to urge all House Democrats to commit to real net neutrality
+        by signing the CRA discharge petition.
       </p>
 
       <div class="sml-pad-y2">
