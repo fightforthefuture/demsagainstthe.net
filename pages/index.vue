@@ -5,7 +5,9 @@
         <div class="row">
           <div class="sml-c12 lrg-c10 grid-center text-center">
             <h1 class="sml-push-y3"><span class="highlight">
-              These Are The 16 Democrats Helping Trump and Ajit Pai Kill Net Neutrality
+              These Are The
+              <span v-if="reps && reps.oppose">{{ reps.oppose.length }}</span>
+              Democrats Helping Trump and Ajit Pai Kill Net Neutrality
             </span></h1>
             <p class="sml-push-y3">
               The vast majority of Americans support net neutrality, but a handful of
