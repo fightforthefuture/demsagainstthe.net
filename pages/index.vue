@@ -18,7 +18,7 @@
               Verizon. Now, Congress has just a few more days to save the Internet as we
               know it and we need these Democrats are on our side. <strong>Enter your
               number now to tell them to side with the American people by committing to
-              real net neutrality.</strong>
+              real net neutrality!</strong>
             </p>
 
             <CallForm class="sml-push-y4 med-push-y6"/>
