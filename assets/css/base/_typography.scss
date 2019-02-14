@@ -103,3 +103,14 @@ button:hover,
 button:focus {
   border-bottom: 1px solid $brand-color;
 }
+
+a.link-dark {
+  color: $grey-light-color;
+  border-color: $grey-light-color;
+  font-weight: $bold-font-weight;
+}
+a.link-dark:hover,
+a.link-dark:focus {
+  color: $grey-color;
+  border-color: $grey-color;
+}

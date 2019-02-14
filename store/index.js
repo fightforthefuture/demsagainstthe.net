@@ -10,10 +10,11 @@ const createStore = () => {
       callpowerCampaignId: config.callpowerCampaignId,
       donateUrl: config.donateUrl,
       letterText: config.letterText,
+      isArchived: config.isArchived,
 
       // State > Modal
-      modalVisible: false,
-      modalType: null,
+      modalVisible: !!config.isArchived,
+      modalType: config.isArchived ? 'archived' : null,
       modalData: null,
 
       // State > Map

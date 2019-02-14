@@ -15,8 +15,8 @@
               <a href="https://gizmodo.com/last-minute-push-to-restore-net-neutrality-stymied-by-d-1831023390">holding out</a>
               support. Why? They&rsquo;ve all taken tens of thousands of dollars in “campaign
               donations” from powerful Internet service providers like AT&amp;T, Comcast and
-              Verizon. Now, Congress has just a few more days to save the Internet as we know 
-              it and we need these Democrats on our side. <strong>Enter your number now to tell 
+              Verizon. Now, Congress has just a few more days to save the Internet as we know
+              it and we need these Democrats on our side. <strong>Enter your number now to tell
               them to side with the American people by committing toreal net neutrality.</strong>
             </p>
 
@@ -53,6 +53,7 @@
 
     <Modal>
       <CallScriptModal v-if="modalType === 'call-script'"/>
+      <ArchivedModal v-if="modalType === 'archived'" />
     </Modal>
   </div>
 </template>
@@ -67,6 +68,7 @@ import TargetReps from '~/components/TargetReps'
 import LogoCloud from '~/components/LogoCloud'
 import Modal from '~/components/Modal'
 import CallScriptModal from '~/components/CallScriptModal'
+import ArchivedModal from '~/components/ArchivedModal'
 
 export default {
   components: {
@@ -74,7 +76,8 @@ export default {
     TargetReps,
     LogoCloud,
     Modal,
-    CallScriptModal
+    CallScriptModal,
+    ArchivedModal
   },
 
   head() {
